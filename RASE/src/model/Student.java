@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Student extends Admin{
+public class Student extends User{
 	private int rollNumber;
 	private LocalDate courseStartDate;
 	private LocalDate courseEndDate;
