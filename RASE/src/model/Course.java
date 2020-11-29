@@ -22,6 +22,4 @@ public class Course {
 	public void setCourseDurationYears(int courseDurationYears) {
 		this.courseDurationYears = courseDurationYears;
 	}
-	
-	
 }

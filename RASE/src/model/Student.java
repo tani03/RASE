@@ -6,7 +6,9 @@ public class Student extends User{
 	private int rollNumber;
 	private LocalDate courseStartDate;
 	private LocalDate courseEndDate;
+	
 	protected College college;//either college object or just college name
+	
 	public int getRollNumber() {
 		return rollNumber;
 	}

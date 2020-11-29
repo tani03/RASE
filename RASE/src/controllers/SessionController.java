@@ -1,25 +1,34 @@
 package controllers;
 
 import interfaces.IUser;
+import model.Student;
 
 public class SessionController implements IUser {
+	ModelServiceController modelServiceController;
+	
+	public SessionController() {
+		modelServiceController = new ModelServiceController();
+	}
 
 	@Override
 	public boolean registerUser(String userName, String password) {
-		// TODO Auto-generated method stub
+		if(!modelServiceController.emailExists(userName)) {
+			Student user = new Student();
+			modelServiceController.saveUser(user);	
+			return true;
+		}
 		return false;
 	}
 
 	@Override
 	public boolean loginUser(String userName, String password) {
-		// TODO Auto-generated method stub
+		
 		return false;
 	}
 
 	@Override
 	public boolean logout() {
-		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 }
