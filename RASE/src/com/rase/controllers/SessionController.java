@@ -1,7 +1,7 @@
-package controllers;
+package com.rase.controllers;
 
-import interfaces.IUser;
-import model.Student;
+import com.rase.interfaces.IUser;
+import com.rase.model.Student;
 
 public class SessionController implements IUser {
 	ModelServiceController modelServiceController;

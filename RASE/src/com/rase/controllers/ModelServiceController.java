@@ -1,7 +1,7 @@
-package controllers;
+package com.rase.controllers;
 
-import model.DataHolder;
-import model.User;
+import com.rase.model.DataHolder;
+import com.rase.model.User;
 
 public class ModelServiceController {
 	

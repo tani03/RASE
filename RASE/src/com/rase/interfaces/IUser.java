@@ -1,4 +1,4 @@
-package interfaces;
+package com.rase.interfaces;
 
 public interface IUser {
 	boolean registerUser(String userName, String password);

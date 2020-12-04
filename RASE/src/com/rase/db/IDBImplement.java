@@ -5,8 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import interfaces.IDBService;
-import model.User;
+import com.rase.interfaces.IDBService;
+import com.rase.model.User;
 
 public class IDBImplement  implements IDBService{
 
@@ -23,7 +23,7 @@ public class IDBImplement  implements IDBService{
 		try {
 			PreparedStatement prepStatement = connection.prepareStatement("insert into students values (?,?,?,?)");
 			prepStatement.setString(1, user.getEmail());
-			prepStatement.setString(2, user.getName());
+			prepStatement.setString(2, user.getFirstName());
 			prepStatement.setString(3, user.getPhone() );
 			prepStatement.setString(4,user.getPassword());
 			
@@ -78,7 +78,7 @@ public class IDBImplement  implements IDBService{
 			
 			if(resultset.next() ) {	
 				
-				user.setName(resultset.getString("first_name"));
+				user.setFirstName(resultset.getString("first_name"));
 				user.setEmail(resultset.getString("email_id"));
 				user.setPhone(resultset.getString("phone"));
 				

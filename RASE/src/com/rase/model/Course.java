@@ -1,4 +1,4 @@
-package model;
+package com.rase.model;
 
 public class Course {
 	String courseId;

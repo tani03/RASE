@@ -1,6 +1,6 @@
-package interfaces;
+package com.rase.interfaces;
 
-import model.User;
+import com.rase.model.User;
 
 public interface IDBService {
 

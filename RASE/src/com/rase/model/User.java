@@ -1,14 +1,13 @@
-package model;
+package com.rase.model;
 
 public class User {
-	protected String name;
+	protected String firstName;
+	protected String lastName;
 	protected String phone;
 	protected String email;
 	private String password;
 	
-	public String getName() {
-		return name;
-	}
+	
 	
 	public String getPhone() {
 		return phone;
@@ -18,10 +17,24 @@ public class User {
 		return email;
 	}
 	
-	public void setName(String name) {
-		this.name = name;
-	}
 	
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}

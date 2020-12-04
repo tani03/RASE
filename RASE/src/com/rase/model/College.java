@@ -1,4 +1,4 @@
-package model;
+package com.rase.model;
 
 import java.util.ArrayList;
 

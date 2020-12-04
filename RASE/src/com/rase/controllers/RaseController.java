@@ -1,4 +1,4 @@
-package controllers;
+package com.rase.controllers;
 
 public class RaseController {
 	SessionController session;
