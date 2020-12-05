@@ -3,12 +3,12 @@ package com.rase.model;
 import java.util.ArrayList;
 
 public class College {
-	protected String collegeId;
+	protected int collegeId;
 	protected String collegeName;
 	protected String address;
-	protected ArrayList<Course> courses;//either arraylist of courses or courseid?
+	//protected ArrayList<Course> courses;//either arraylist of courses or courseid?
 	
-	public String getCollegeId() {
+	public int getCollegeId() {
 		return collegeId;
 	}
 	
@@ -16,10 +16,8 @@ public class College {
 		return collegeName;
 	}
 	
-	public ArrayList<Course> getCourses() {
-		return courses;
-	}
-	public void setCollegeId(String collegeId) {
+	
+	public void setCollegeId(int collegeId) {
 		this.collegeId = collegeId;
 	}
 	public void setCollegeName(String collegeName) {
@@ -31,7 +29,5 @@ public class College {
 	public String getAddress() {
 		return address;
 	}
-	public void setCourses(ArrayList<Course> courses) {
-		this.courses = courses;
-	}
+	
 }
