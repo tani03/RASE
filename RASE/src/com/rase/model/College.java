@@ -1,33 +1,30 @@
 package com.rase.model;
 
-import java.util.ArrayList;
-
 public class College {
-	protected int collegeId;
-	protected String collegeName;
-	protected String address;
-	//protected ArrayList<Course> courses;//either arraylist of courses or courseid?
+
+	private int collegeId;
+	private String collegeName;
+	private String collegeAddress;
 	
 	public int getCollegeId() {
 		return collegeId;
-	}
-	
-	public String getCollegeName() {
-		return collegeName;
 	}
 	
 	
 	public void setCollegeId(int collegeId) {
 		this.collegeId = collegeId;
 	}
+	public String getCollegeName() {
+		return collegeName;
+	}
 	public void setCollegeName(String collegeName) {
 		this.collegeName = collegeName;
 	}
-	public void setAddress(String address) {
-		this.address = address;
+	public String getCollegeAddress() {
+		return collegeAddress;
 	}
-	public String getAddress() {
-		return address;
+	public void setCollegeAddress(String collegeAddress) {
+		this.collegeAddress = collegeAddress;
 	}
 	
 }
